@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--*********************************************-->
+<!--   File    : HR_SR04_Multiplex_Shield.fsproj -->
+<!--   Format  : TopoR Project file              -->
+<!--   Version : 2                               -->
+<!--   Program : TopoR Lite 7.0.18508            -->
+<!--   Date    : Thursday, November 28, 2019     -->
+<!--   Time    : 16:37                           -->
+<!--*********************************************-->
+
+<Project>
+   <Version current="2"/>
+   <GUID>{5FC4B0A0-5D16-4730-AAA5-2876ECEE33C6}</GUID>
+   <Documents>
+      <Section name="PCB" isExpanded="true">
+         <File path=".\HC_SR04_Multiplex_Shield.fsx" isopened="1" dateChange="2019-11-28 16:32:04"/>
+      </Section>
+      <Section name="AutoRouting" isExpanded="true">
+         <File path=".\autoroute_191128163452\HC_SR04_Multiplex_Shield_1555-3s.fsb" isopened="0" dateChange="2019-11-28 16:35:21"/>
+         <File path=".\autoroute_191128163653\HC_SR04_Multiplex_Shield_1401-5s.fsb" isopened="0" dateChange="2019-11-28 16:37:33"/>
+      </Section>
+   </Documents>
+   <Import>
+      <Specctra>
+         <Path name="C:\Users\administrator\Documents\GitHub\SpookyAlexa\Scanner\HR_SR04_Multiplex_Shield\HC_SR04_Multiplex_Shield.dsn"/>
+      </Specctra>
+   </Import>
+</Project>

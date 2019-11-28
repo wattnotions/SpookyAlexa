@@ -351,10 +351,10 @@
       (pins P3-3)
     )
     (net "/A4(SDA)"
-      (pins P2-5 P3-2)
+      (pins P2-5)
     )
     (net "/A5(SCL)"
-      (pins P2-6 P3-1)
+      (pins P2-6)
     )
     (net "/9(**)"
       (pins P3-9)
@@ -515,11 +515,17 @@
     (net /3
       (pins P4-5 U1-11 U2-11)
     )
+    (net /A5
+      (pins P3-1)
+    )
+    (net /A4
+      (pins P3-2)
+    )
     (class kicad_default "" +3V3 +5V "/0(Rx)" "/1(Tx)" "/10(ECHO)" "/11(TRIG)"
       /12 "/12(MISO)" "/13(SCK)" /2 /3 "/3(**)" /4 /5 "/5(**)" /6 "/6(**)"
-      /7 /8 /9 "/9(**)" /A0 /A1 /A2 /A3 "/A4(SDA)" "/A5(SCL)" /AREF /E1 /E10
-      /E11 /E2 /E3 /E4 /E5 /E6 /E7 /E8 /E9 /IOREF /Reset /T1 /T10 /T11 /T12
-      /T2 /T3 /T4 /T5 /T6 /T7 /T8 /T9 /Vin GND "Net-(P1-Pad1)" "Net-(P5-Pad1)"
+      /7 /8 /9 "/9(**)" /A0 /A1 /A2 /A3 /A4 "/A4(SDA)" /A5 "/A5(SCL)" /AREF
+      /E1 /E10 /E11 /E2 /E3 /E4 /E5 /E6 /E7 /E8 /E9 /IOREF /Reset /T1 /T10
+      /T11 /T12 /T2 /T3 /T4 /T5 /T6 /T7 /T8 /T9 /Vin GND "Net-(P1-Pad1)" "Net-(P5-Pad1)"
       "Net-(P6-Pad1)" "Net-(P7-Pad1)" "Net-(P8-Pad1)" "Net-(U1-Pad16)" "Net-(U1-Pad17)"
       "Net-(U1-Pad18)" "Net-(U1-Pad19)" "Net-(U1-Pad20)" "Net-(U2-Pad16)"
       "Net-(U2-Pad17)" "Net-(U2-Pad18)" "Net-(U2-Pad19)" "Net-(U2-Pad20)"

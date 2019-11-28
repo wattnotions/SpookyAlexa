@@ -360,25 +360,19 @@
       (pins P3-9)
     )
     (net /8
-      (pins P3-10 U1-14)
+      (pins P3-10)
     )
     (net /7
-      (pins P4-1 U1-11)
+      (pins P4-1)
     )
     (net "/6(**)"
       (pins P4-2)
     )
-    (net "/5(**)"
-      (pins P4-3)
-    )
     (net /4
-      (pins P4-4 U2-14)
-    )
-    (net "/3(**)"
-      (pins P4-5)
+      (pins P4-4 U1-14 U2-14)
     )
     (net /2
-      (pins P4-6 U2-10)
+      (pins P4-6 U1-10 U2-10)
     )
     (net "/1(Tx)"
       (pins P4-7)
@@ -406,9 +400,6 @@
     )
     (net +3V3
       (pins P1-4)
-    )
-    (net "/12(MISO)"
-      (pins P3-6)
     )
     (net /E1
       (pins J1-1 U1-9)
@@ -482,14 +473,8 @@
     (net "/10(ECHO)"
       (pins P3-8 U1-1)
     )
-    (net /6
-      (pins U1-10)
-    )
-    (net /9
-      (pins U1-13)
-    )
     (net /12
-      (pins U1-15)
+      (pins P3-6 U1-15)
     )
     (net "Net-(U1-Pad16)"
       (pins U1-16)
@@ -525,10 +510,10 @@
       (pins U2-16)
     )
     (net /5
-      (pins U2-13)
+      (pins P4-3 U1-13 U2-13)
     )
     (net /3
-      (pins U2-11)
+      (pins P4-5 U1-11 U2-11)
     )
     (class kicad_default "" +3V3 +5V "/0(Rx)" "/1(Tx)" "/10(ECHO)" "/11(TRIG)"
       /12 "/12(MISO)" "/13(SCK)" /2 /3 "/3(**)" /4 /5 "/5(**)" /6 "/6(**)"

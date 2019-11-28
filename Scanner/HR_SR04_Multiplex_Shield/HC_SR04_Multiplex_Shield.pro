@@ -1,4 +1,4 @@
-update=28/11/2019 10:40:57
+update=28/11/2019 16:01:12
 version=1
 last_client=kicad
 [cvpcb]
@@ -22,7 +22,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=OrangePipShield.net
+LastNetListRead=HC_SR04_Multiplex_Shield.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

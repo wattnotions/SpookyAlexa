@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:OrangePipShield-cache
+LIBS:HC_SR04_Multiplex_Shield-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -37,11 +37,11 @@ Text Label 5100 4100 0    60   ~ 0
 Text Label 5100 4200 0    60   ~ 0
 1(Tx)
 Text Label 5100 4000 0    60   ~ 0
-3(**)
+3
 Text Label 5100 3900 0    60   ~ 0
 4
 Text Label 5100 3800 0    60   ~ 0
-5(**)
+5
 Text Label 5100 3700 0    60   ~ 0
 6(**)
 Text Label 5100 3600 0    60   ~ 0
@@ -55,16 +55,16 @@ Text Label 5100 3200 0    60   ~ 0
 Text Label 5100 3100 0    60   ~ 0
 11(TRIG)
 Text Label 5100 3000 0    60   ~ 0
-12(MISO)
+12
 Text Label 5100 2900 0    60   ~ 0
 13(SCK)
 Text Label 5100 2700 0    60   ~ 0
 AREF
 NoConn ~ 3950 2900
 Text Label 5100 2600 0    60   ~ 0
-A4(SDA)
+A4
 Text Label 5100 2500 0    60   ~ 0
-A5(SCL)
+A5
 Text Notes 4050 1775 0    60   ~ 0
 Holes
 $Comp
@@ -327,13 +327,13 @@ Text Label 6250 4950 0    50   ~ 0
 Text Label 6250 5050 0    50   ~ 0
 5
 Text Label 6250 2200 0    50   ~ 0
-6
+2
 Text Label 6250 2300 0    50   ~ 0
-7
+3
 Text Label 6250 2400 0    50   ~ 0
-8
+4
 Text Label 6250 2500 0    50   ~ 0
-9
+5
 Text Label 6275 2900 2    50   ~ 0
 12
 Wire Wire Line

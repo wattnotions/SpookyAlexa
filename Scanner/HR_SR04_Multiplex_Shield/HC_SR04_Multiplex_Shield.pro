@@ -1,6 +1,6 @@
-update=28/11/2019 16:01:12
+update=02/12/2019 14:55:19
 version=1
-last_client=kicad
+last_client=pcbnew
 [cvpcb]
 version=1
 NetIExt=net
@@ -64,7 +64,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -234,7 +234,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.1524
 TrackWidth=0.25
 ViaDiameter=0.6
 ViaDrill=0.4

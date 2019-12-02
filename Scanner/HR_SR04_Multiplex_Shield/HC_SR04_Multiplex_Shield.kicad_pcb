@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 27)
+    (drawings 28)
     (tracks 666)
     (zones 0)
     (modules 21)
@@ -1191,6 +1191,9 @@
     )
   )
 
+  (gr_text SpookyAlexa (at 119.507 98.425 90) (layer F.SilkS)
+    (effects (font (size 2.54 2.54) (thickness 0.3)))
+  )
   (gr_text 1 (at 138.938 121.285 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )

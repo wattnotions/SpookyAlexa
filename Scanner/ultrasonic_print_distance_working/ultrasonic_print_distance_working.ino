@@ -8,6 +8,16 @@
 
  #define TRIG_PIN 11
  #define ECHO_PIN 10
+
+ int port_vals[11][4] = {
+    {10, 11, 12, 13},
+    {14, 15, 16, 17}
+};
+
+#define d2_mask B00000001;
+#define d3_mask B00000010;
+#define d4_mask B00000100;
+#define d5_mask B00001000;
  
 void setup() {
   
@@ -28,24 +38,43 @@ void setup() {
 
   digitalWrite(A0, LOW);
   digitalWrite(12, LOW);
-  digitalWrite(1, LOW);
-  digitalWrite(2, LOW);
+  digitalWrite(2, HIGH);
   digitalWrite(3, LOW);
   digitalWrite(4, LOW);
+  digitalWrite(5, HIGH);
+
+  
 }
  
 void loop() {
 
 
+  boolean d2, d3, d4, d5;
+  int i;
+
+  Serial.println("testing123");
+
+  for(i=1;i<12;i++){
+
+    d2 = i & B00000001;
+    d3 = i & B00000010;
+    d4 = i & B00000100;
+    d5 = i & B00001000;
+
+    Serial.print( d2);
+    Serial.print( d3);
+    Serial.print(d4);
+    Serial.print(d5);
+    Serial.println();
+    
+  }
+
+  while(1){}
 
   static long distance;
 
   distance = get_distance();
-  
-  if (distance<100){
-    Serial.println(distance);
-  }
-
+  Serial.println(distance);
   delay(50);
 }
 
@@ -70,13 +99,19 @@ int get_distance()
   // Convert the time into a distance
   cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
   
-  if (cm < 100)
-  {
-    return cm;
+  return cm;
+}
+
+void printBin(int Number,char ZeroPadding){
+//ZeroPadding = nth bit, e.g for a 16 bit number nth bit = 15
+signed char i=ZeroPadding;
+
+  while(i>=0){
+      if((Number & (1<<i)) > 0) Serial.write('1');
+      else Serial.write('0');
+      --i;
   }
-  else
-  {
-    return 100;
-  }
+
+        Serial.println();
 }
 

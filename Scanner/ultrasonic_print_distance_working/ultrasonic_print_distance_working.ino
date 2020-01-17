@@ -13,6 +13,8 @@
 #define d3_mask B00000010;
 #define d4_mask B00000100;
 #define d5_mask B00001000;
+
+int initial_vals[11];
  
 void setup() {
   
@@ -51,15 +53,7 @@ void loop() {
 
   for(i=0;i<10;i++){
     
-    d2 = i & B00000001;
-    d3 = i & B00000010;
-    d4 = i & B00000100;
-    d5 = i & B00001000;
-
-    digitalWrite(2, d2);
-    digitalWrite(3, d3);
-    digitalWrite(4, d4);
-    digitalWrite(5, d5);
+    selectSensor(i);
 
     static long distance;
 
@@ -146,4 +140,19 @@ void printSensorVals(){
 
   Serial.println();
 
+}
+
+void selectSensor(int i){
+
+  boolean d2, d3, d4, d5;
+  
+  d2 = i & B00000001;
+  d3 = i & B00000010;
+  d4 = i & B00000100;
+  d5 = i & B00001000;
+
+  digitalWrite(2, d2);
+  digitalWrite(3, d3);
+  digitalWrite(4, d4);
+  digitalWrite(5, d5);
 }

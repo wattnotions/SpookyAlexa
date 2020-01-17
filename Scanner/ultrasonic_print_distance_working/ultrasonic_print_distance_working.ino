@@ -9,11 +9,6 @@
  #define TRIG_PIN 11
  #define ECHO_PIN 10
 
- int port_vals[11][4] = {
-    {10, 11, 12, 13},
-    {14, 15, 16, 17}
-};
-
 #define d2_mask B00000001;
 #define d3_mask B00000010;
 #define d4_mask B00000100;
@@ -71,7 +66,7 @@ void loop() {
     distance = get_distance();
     Serial.print(distance);
     Serial.print("  ");
-    delay(64);
+    delay(10);
    
     
   }
@@ -118,4 +113,37 @@ signed char i=ZeroPadding;
   }
 
         Serial.println();
+}
+
+void printSensorVals(){
+
+  boolean d2, d3, d4, d5;
+  int i;
+
+  
+
+  for(i=0;i<10;i++){
+    
+    d2 = i & B00000001;
+    d3 = i & B00000010;
+    d4 = i & B00000100;
+    d5 = i & B00001000;
+
+    digitalWrite(2, d2);
+    digitalWrite(3, d3);
+    digitalWrite(4, d4);
+    digitalWrite(5, d5);
+
+    static long distance;
+
+    distance = get_distance();
+    Serial.print(distance);
+    Serial.print("  ");
+    delay(10);
+   
+    
+  }
+
+  Serial.println();
+
 }

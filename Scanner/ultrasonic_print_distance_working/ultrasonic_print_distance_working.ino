@@ -14,6 +14,8 @@
 #define d4_mask B00000100;
 #define d5_mask B00001000;
 
+#define NUM_SENSORS = 10; //11th sensor isnt working atm
+
 int initial_vals[11];
  
 void setup() {
@@ -51,7 +53,7 @@ void loop() {
 
   
 
-  for(i=0;i<10;i++){
+  for(i=0;i<NUM_SENSORS;i++){
     
     selectSensor(i);
 

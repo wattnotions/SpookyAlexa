@@ -52,30 +52,35 @@ void loop() {
   boolean d2, d3, d4, d5;
   int i;
 
-  Serial.println("testing123");
+  
 
-  for(i=1;i<12;i++){
-
+  for(i=0;i<10;i++){
+    
     d2 = i & B00000001;
     d3 = i & B00000010;
     d4 = i & B00000100;
     d5 = i & B00001000;
 
-    Serial.print( d2);
-    Serial.print( d3);
-    Serial.print(d4);
-    Serial.print(d5);
-    Serial.println();
+    digitalWrite(2, d2);
+    digitalWrite(3, d3);
+    digitalWrite(4, d4);
+    digitalWrite(5, d5);
+
+    static long distance;
+
+    distance = get_distance();
+    Serial.print(distance);
+    Serial.print("  ");
+    delay(64);
+   
     
   }
 
-  while(1){}
+  Serial.println();
 
-  static long distance;
+ 
 
-  distance = get_distance();
-  Serial.println(distance);
-  delay(50);
+  
 }
 
 int get_distance()
@@ -114,4 +119,3 @@ signed char i=ZeroPadding;
 
         Serial.println();
 }
-

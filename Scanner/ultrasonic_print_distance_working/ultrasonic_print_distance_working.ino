@@ -14,9 +14,9 @@
 #define d4_mask B00000100;
 #define d5_mask B00001000;
 
-#define NUM_SENSORS = 10; //11th sensor isnt working atm
+#define NUM_SENSORS 10 //11th sensor isnt working atm
 
-int initial_vals[11];
+
  
 void setup() {
   
@@ -49,27 +49,42 @@ void loop() {
 
 
   boolean d2, d3, d4, d5;
+  static long distance;
   int i;
+  int initial_vals[11];
+  int new_vals[11];
+  int new_val;
 
+
+  getInitialVals(initial_vals);
+  getInitialVals(initial_vals);
+  getInitialVals(initial_vals);
+
+ // while(1){
+  //  printSensorVals();
+  //}
+
+  while(1){
+    for (i=0; i<10; i++){
   
-
-  for(i=0;i<NUM_SENSORS;i++){
-    
-    selectSensor(i);
-
-    static long distance;
-
-    distance = get_distance();
-    Serial.print(distance);
-    Serial.print("  ");
-    delay(10);
-   
-    
+      selectSensor(i);
+  
+      new_val = get_distance();
+      if (initial_vals[i] - new_val > 20){
+        Serial.print('o');
+      }
+      else{
+        Serial.print('-');
+      }
+  
+      new_vals[i] = new_val;
+      
+      
+    }
+    Serial.println();
   }
 
-  Serial.println();
 
- 
 
   
 }
@@ -94,8 +109,9 @@ int get_distance()
  
   // Convert the time into a distance
   cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
-  
-  return cm;
+
+  if (cm>100) {return 100;}
+  else { return cm;}
 }
 
 void printBin(int Number,char ZeroPadding){
@@ -113,25 +129,15 @@ signed char i=ZeroPadding;
 
 void printSensorVals(){
 
-  boolean d2, d3, d4, d5;
+ 
+  static long distance;
   int i;
 
   
 
-  for(i=0;i<10;i++){
+  for(i=0;i<NUM_SENSORS;i++){
     
-    d2 = i & B00000001;
-    d3 = i & B00000010;
-    d4 = i & B00000100;
-    d5 = i & B00001000;
-
-    digitalWrite(2, d2);
-    digitalWrite(3, d3);
-    digitalWrite(4, d4);
-    digitalWrite(5, d5);
-
-    static long distance;
-
+    selectSensor(i);
     distance = get_distance();
     Serial.print(distance);
     Serial.print("  ");
@@ -144,7 +150,7 @@ void printSensorVals(){
 
 }
 
-void selectSensor(int i){
+void selectSensor(int i){ //selects ultrasonic sensor 0-10
 
   boolean d2, d3, d4, d5;
   
@@ -157,4 +163,19 @@ void selectSensor(int i){
   digitalWrite(3, d3);
   digitalWrite(4, d4);
   digitalWrite(5, d5);
+}
+
+int getInitialVals(int *initial_vals){
+
+  int i;
+  static long distance;
+
+  for(i=0;i<NUM_SENSORS;i++){
+    
+    selectSensor(i);
+    distance = get_distance();
+    initial_vals[i] = distance;  //store initial reading in array
+    delay(50);
+  }
+  
 }

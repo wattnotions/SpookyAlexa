@@ -72,6 +72,7 @@ void loop() {
       new_val = get_distance();
       if (initial_vals[i] - new_val > 20){
         Serial.print('o');
+        Serial.print(new_val);
       }
       else{
         Serial.print('-');
@@ -81,7 +82,7 @@ void loop() {
       
       
     }
-    Serial.println();
+    Serial.print('\r');
   }
 
 

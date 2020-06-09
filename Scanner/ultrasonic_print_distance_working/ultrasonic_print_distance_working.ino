@@ -60,9 +60,9 @@ void loop() {
   getInitialVals(initial_vals);
   getInitialVals(initial_vals);
 
- // while(1){
-  //  printSensorVals();
-  //}
+  while(1){
+    printSensorVals();
+  }
 
   while(1){
     for (i=0; i<10; i++){
@@ -110,7 +110,7 @@ int get_distance()
  
   // Convert the time into a distance
   cm = (duration/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
-
+  
   if (cm>100) {return 100;}
   else { return cm;}
 }
@@ -141,12 +141,13 @@ void printSensorVals(){
     selectSensor(i);
     distance = get_distance();
     Serial.print(distance);
-    Serial.print("  ");
-    delay(10);
+    Serial.print(",");
+    delay(1);
    
     
   }
-
+  Serial.print("000,000");
+  
   Serial.println();
 
 }

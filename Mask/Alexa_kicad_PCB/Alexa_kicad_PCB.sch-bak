@@ -512,4 +512,49 @@ F 3 "" H 6200 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 4150 6200 4200
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 5F09035A
+P 1000 6650
+F 0 "J?" H 1032 6975 50  0000 C CNN
+F 1 "Audio In" H 1032 6884 50  0000 C CNN
+F 2 "" H 1000 6650 50  0001 C CNN
+F 3 "~" H 1000 6650 50  0001 C CNN
+	1    1000 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 5F094637
+P 1000 7350
+F 0 "J?" H 1032 7675 50  0000 C CNN
+F 1 "Audio Out" H 1032 7584 50  0000 C CNN
+F 2 "" H 1000 7350 50  0001 C CNN
+F 3 "~" H 1000 7350 50  0001 C CNN
+	1    1000 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6550 1350 6550
+Wire Wire Line
+	1350 6550 1350 7250
+Wire Wire Line
+	1350 7250 1200 7250
+Wire Wire Line
+	1200 6650 1400 6650
+Wire Wire Line
+	1400 6650 1400 7350
+Wire Wire Line
+	1400 7350 1200 7350
+$Comp
+L pspice:OPAMP U?
+U 1 1 5F0A6325
+P 2450 6850
+F 0 "U?" H 2794 6896 50  0000 L CNN
+F 1 "OPAMP" H 2794 6805 50  0000 L CNN
+F 2 "" H 2450 6850 50  0001 C CNN
+F 3 "~" H 2450 6850 50  0001 C CNN
+	1    2450 6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

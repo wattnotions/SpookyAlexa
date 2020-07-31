@@ -513,40 +513,6 @@ $EndComp
 Wire Wire Line
 	6200 4150 6200 4200
 $Comp
-L Connector:AudioJack2_Ground J?
-U 1 1 5F09035A
-P 1050 6350
-F 0 "J?" H 1082 6675 50  0000 C CNN
-F 1 "Audio In" H 1082 6584 50  0000 C CNN
-F 2 "" H 1050 6350 50  0001 C CNN
-F 3 "~" H 1050 6350 50  0001 C CNN
-	1    1050 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack2_Ground J?
-U 1 1 5F094637
-P 1050 7050
-F 0 "J?" H 1082 7375 50  0000 C CNN
-F 1 "Audio Out" H 1082 7284 50  0000 C CNN
-F 2 "" H 1050 7050 50  0001 C CNN
-F 3 "~" H 1050 7050 50  0001 C CNN
-	1    1050 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 6250 1400 6250
-Wire Wire Line
-	1400 6250 1400 6450
-Wire Wire Line
-	1400 6950 1250 6950
-Wire Wire Line
-	1250 6350 1450 6350
-Wire Wire Line
-	1450 6350 1450 6450
-Wire Wire Line
-	1450 7050 1250 7050
-$Comp
 L Device:R_Small R?
 U 1 1 5F1059D2
 P 2600 7100
@@ -687,38 +653,6 @@ Connection ~ 3600 6550
 Text Label 4000 6550 0    50   ~ 0
 ADC_0
 $Comp
-L power:GND #PWR?
-U 1 1 5F1297DD
-P 1050 6500
-F 0 "#PWR?" H 1050 6250 50  0001 C CNN
-F 1 "GND" H 1150 6400 50  0000 C CNN
-F 2 "" H 1050 6500 50  0001 C CNN
-F 3 "" H 1050 6500 50  0001 C CNN
-	1    1050 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F12A17D
-P 1050 7250
-F 0 "#PWR?" H 1050 7000 50  0001 C CNN
-F 1 "GND" H 1150 7150 50  0000 C CNN
-F 2 "" H 1050 7250 50  0001 C CNN
-F 3 "" H 1050 7250 50  0001 C CNN
-	1    1050 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 6450 1450 6450
-Connection ~ 1450 6450
-Wire Wire Line
-	1450 6450 1450 7050
-Wire Wire Line
-	1450 6450 1400 6450
-Connection ~ 1400 6450
-Wire Wire Line
-	1400 6450 1400 6950
-$Comp
 L power:+5V #PWR?
 U 1 1 5F14761B
 P 9200 1650
@@ -848,4 +782,87 @@ F 3 "http://www.ti.com/lit/ds/symlink/tlv2375.pdf" H 4800 6850 50  0001 C CNN
 	3    4800 6850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Kicad_symbols:1503_09 X?
+U 1 1 5F24E4B9
+P 900 6300
+F 0 "X?" H 947 5886 50  0000 C CNN
+F 1 "1503_09" H 947 5977 50  0000 C CNN
+F 2 "1503_09" H 900 6300 50  0001 L BNN
+F 3 "unknown" H 900 6300 50  0001 L BNN
+F 4 "" H 900 6300 50  0001 L BNN "Field4"
+F 5 "" H 900 6300 50  0001 L BNN "Field5"
+F 6 "1243244" H 900 6300 50  0001 L BNN "Field6"
+F 7 "1" H 900 6300 50  0001 L BNN "Field7"
+	1    900  6300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Kicad_symbols:1503_09 X?
+U 1 1 5F2551EC
+P 900 7000
+F 0 "X?" H 947 6586 50  0000 C CNN
+F 1 "1503_09" H 947 6677 50  0000 C CNN
+F 2 "1503_09" H 900 7000 50  0001 L BNN
+F 3 "unknown" H 900 7000 50  0001 L BNN
+F 4 "" H 900 7000 50  0001 L BNN "Field4"
+F 5 "" H 900 7000 50  0001 L BNN "Field5"
+F 6 "1243244" H 900 7000 50  0001 L BNN "Field6"
+F 7 "1" H 900 7000 50  0001 L BNN "Field7"
+	1    900  7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F256FB9
+P 1350 6100
+F 0 "#PWR?" H 1350 5850 50  0001 C CNN
+F 1 "GND" H 1350 6150 50  0000 C CNN
+F 2 "" H 1350 6100 50  0001 C CNN
+F 3 "" H 1350 6100 50  0001 C CNN
+	1    1350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F2576E6
+P 1350 6800
+F 0 "#PWR?" H 1350 6550 50  0001 C CNN
+F 1 "GND" H 1350 6850 50  0000 C CNN
+F 2 "" H 1350 6800 50  0001 C CNN
+F 3 "" H 1350 6800 50  0001 C CNN
+	1    1350 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 6800 1350 6800
+Wire Wire Line
+	1100 6100 1350 6100
+Wire Wire Line
+	1100 6500 1200 6500
+Wire Wire Line
+	1200 6500 1200 6450
+Wire Wire Line
+	1200 6200 1100 6200
+Wire Wire Line
+	1100 6900 1200 6900
+Wire Wire Line
+	1200 6900 1200 7050
+Wire Wire Line
+	1200 7200 1100 7200
+Wire Wire Line
+	1200 6450 1500 6450
+Connection ~ 1200 6450
+Wire Wire Line
+	1200 6450 1200 6200
+Wire Wire Line
+	1200 7050 1500 7050
+Wire Wire Line
+	1500 7050 1500 6450
+Connection ~ 1200 7050
+Wire Wire Line
+	1200 7050 1200 7200
+Connection ~ 1500 6450
+Wire Wire Line
+	1500 6450 2200 6450
 $EndSCHEMATC

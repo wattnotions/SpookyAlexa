@@ -2,8 +2,8 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
-    (tracks 211)
+    (drawings 11)
+    (tracks 214)
     (zones 0)
     (modules 32)
     (nets 74)
@@ -1838,6 +1838,15 @@
     )
   )
 
+  (gr_text EYES (at 134.874 108.966) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text NECK (at 123.1265 109.093) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
+  (gr_text MOUTH (at 110.6805 109.22) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_line (start 99.06 68.58) (end 147.32 68.58) (layer Edge.Cuts) (width 0.05) (tstamp 5F288502))
   (gr_line (start 96.52 111.76) (end 96.52 71.12) (layer Edge.Cuts) (width 0.05) (tstamp 5F288501))
   (gr_line (start 147.32 114.3) (end 99.06 114.3) (layer Edge.Cuts) (width 0.05) (tstamp 5F288500))
@@ -1847,6 +1856,7 @@
   (gr_arc (start 147.32 111.76) (end 147.32 114.3) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 147.32 71.12) (end 149.86 71.12) (angle -90) (layer Edge.Cuts) (width 0.05))
 
+  (segment (start 141.194 72.804) (end 139.994 72.804) (width 0.15) (layer F.Cu) (net 1))
   (segment (start 118.01 92.23) (end 118.785 92.23) (width 0.15) (layer F.Cu) (net 2))
   (segment (start 115.904 91.15) (end 116.984 92.23) (width 0.15) (layer F.Cu) (net 2))
   (segment (start 116.984 92.23) (end 118.01 92.23) (width 0.15) (layer F.Cu) (net 2))
@@ -1935,6 +1945,8 @@
   (segment (start 131.7625 89.535) (end 131.0675 90.23) (width 0.15) (layer F.Cu) (net 6))
   (segment (start 133.066 104.648) (end 131.669 103.251) (width 0.15) (layer F.Cu) (net 6))
   (segment (start 148.59 104.648) (end 133.066 104.648) (width 0.15) (layer F.Cu) (net 6))
+  (segment (start 103.918 101.473) (end 109.068 101.473) (width 0.15) (layer F.Cu) (net 6))
+  (segment (start 102.768 101.473) (end 103.918 101.473) (width 0.15) (layer F.Cu) (net 6))
   (segment (start 109.82 87.441) (end 112.679 84.582) (width 0.15) (layer F.Cu) (net 7))
   (segment (start 108.839 87.441) (end 109.82 87.441) (width 0.15) (layer F.Cu) (net 7))
   (segment (start 102.494 83.693) (end 102.494 88.016) (width 0.15) (layer F.Cu) (net 7))

@@ -862,7 +862,158 @@ $EndComp
 Wire Wire Line
 	2950 6550 3000 6550
 Connection ~ 2950 6550
+$Comp
+L power:+5V #PWR0126
+U 1 1 5F2E15DC
+P 8650 850
+F 0 "#PWR0126" H 8650 700 50  0001 C CNN
+F 1 "+5V" H 8665 1023 50  0000 C CNN
+F 2 "" H 8650 850 50  0001 C CNN
+F 3 "" H 8650 850 50  0001 C CNN
+	1    8650 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1150 8050 1150
+$Comp
+L power:GND #PWR0127
+U 1 1 5F2E63BF
+P 7600 1850
+F 0 "#PWR0127" H 7600 1600 50  0001 C CNN
+F 1 "GND" H 7605 1677 50  0000 C CNN
+F 2 "" H 7600 1850 50  0001 C CNN
+F 3 "" H 7600 1850 50  0001 C CNN
+	1    7600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1750 7600 1800
+Wire Wire Line
+	7500 1750 7500 1800
+Wire Wire Line
+	7500 1800 7600 1800
+Connection ~ 7600 1800
+Wire Wire Line
+	7600 1800 7600 1850
+Text Label 5400 5150 0    50   ~ 0
+33_BO
+Text Label 5400 5250 0    50   ~ 0
+34_BO
+Text Label 5400 5350 0    50   ~ 0
+35_BO
+Text Label 5400 5450 0    50   ~ 0
+36_BO
+Text Label 3900 4550 2    50   ~ 0
+37_BO
+Text Label 3900 4650 2    50   ~ 0
+38_BO
+Text Label 3900 4750 2    50   ~ 0
+39_BO
+Text Label 3900 4850 2    50   ~ 0
+40_BO
+Text Label 5400 3050 0    50   ~ 0
+41_BO
+Text Label 5400 3150 0    50   ~ 0
+42_BO
+Wire Wire Line
+	5350 3050 5400 3050
+Wire Wire Line
+	5350 3150 5400 3150
+Wire Wire Line
+	3900 4550 3950 4550
+Wire Wire Line
+	3900 4650 3950 4650
+Wire Wire Line
+	3900 4750 3950 4750
+Wire Wire Line
+	3900 4850 3950 4850
+Wire Wire Line
+	5350 5150 5400 5150
+Wire Wire Line
+	5350 5250 5400 5250
+Wire Wire Line
+	5350 5350 5400 5350
+Wire Wire Line
+	5350 5450 5400 5450
+Text Label 10200 5850 2    50   ~ 0
+33_BO
+Text Label 10200 5950 2    50   ~ 0
+34_BO
+Text Label 10200 6050 2    50   ~ 0
+35_BO
+Text Label 10200 6150 2    50   ~ 0
+36_BO
+Text Label 10200 6250 2    50   ~ 0
+37_BO
+$Comp
+L Connector:Conn_01x07_Male J3
+U 1 1 5F2F9C7F
+P 10450 5950
+F 0 "J3" H 10422 5882 50  0000 R CNN
+F 1 "Conn_01x07_Male" H 10422 5973 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal" H 10450 5950 50  0001 C CNN
+F 3 "~" H 10450 5950 50  0001 C CNN
+	1    10450 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5F30498A
+P 9800 5750
+F 0 "#PWR0128" H 9800 5500 50  0001 C CNN
+F 1 "GND" H 9805 5577 50  0000 C CNN
+F 2 "" H 9800 5750 50  0001 C CNN
+F 3 "" H 9800 5750 50  0001 C CNN
+	1    9800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0129
+U 1 1 5F304E92
+P 9800 5600
+F 0 "#PWR0129" H 9800 5450 50  0001 C CNN
+F 1 "+3V3" H 9815 5773 50  0000 C CNN
+F 2 "" H 9800 5600 50  0001 C CNN
+F 3 "" H 9800 5600 50  0001 C CNN
+	1    9800 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5600 9800 5650
+Wire Wire Line
+	9800 5650 10250 5650
+Wire Wire Line
+	9800 5750 10250 5750
+Wire Wire Line
+	10200 6250 10250 6250
+Wire Wire Line
+	10200 6150 10250 6150
+Wire Wire Line
+	10200 6050 10250 6050
+Wire Wire Line
+	10200 5950 10250 5950
+Wire Wire Line
+	10200 5850 10250 5850
 Wire Wire Line
 	3300 6550 3400 6550
 Connection ~ 3400 6550
+$Comp
+L Diode:BAR43FILM D2
+U 1 1 5F3107B3
+P 8300 950
+F 0 "D2" H 8300 734 50  0000 C CNN
+F 1 "BAR43FILM" H 8300 825 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8300 775 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/bar43.pdf" H 8300 950 50  0001 C CNN
+	1    8300 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8050 950  8150 950 
+Wire Wire Line
+	8050 950  8050 1150
+Wire Wire Line
+	8450 950  8650 950 
+Wire Wire Line
+	8650 950  8650 850 
 $EndSCHEMATC

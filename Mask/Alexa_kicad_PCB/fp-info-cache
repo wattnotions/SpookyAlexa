@@ -1,4 +1,4 @@
-16950612964270512
+16952212021346433
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75291,6 +75291,13 @@ QFN-28_EP_6x6_Pitch0.65mm
 0
 44
 29
+kicad_footprints
+SP485EEN-L&slash_TR
+
+
+0
+8
+8
 kicad_footprints
 TSOP6238TT _IR_Receiver
 

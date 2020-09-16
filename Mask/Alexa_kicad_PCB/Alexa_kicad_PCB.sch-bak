@@ -1422,4 +1422,12 @@ Wire Wire Line
 Connection ~ 7525 2925
 Wire Wire Line
 	7525 2925 7525 2975
+Text Label 3875 2250 2    50   ~ 0
+NRST
+Wire Wire Line
+	3875 2250 3950 2250
+Text Label 5425 4250 0    50   ~ 0
+PB3-USR_SW
+Wire Wire Line
+	5350 4250 5425 4250
 $EndSCHEMATC

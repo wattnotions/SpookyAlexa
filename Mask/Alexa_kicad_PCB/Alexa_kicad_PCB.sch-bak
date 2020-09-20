@@ -935,7 +935,7 @@ Wire Wire Line
 Text Label 8275 5400 0    50   ~ 0
 BOOT0-(DFU)
 Text Label 10600 4325 0    50   ~ 0
-USR_SW
+PB3-USR_SW
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5F68A48A

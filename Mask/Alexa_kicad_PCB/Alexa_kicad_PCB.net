@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\shane\Documents\GitHub\SpookyAlexa\Mask\Alexa_kicad_PCB\Alexa_kicad_PCB.sch)
-    (date "20/09/2020 14:37:40")
+    (date "20/09/2020 15:20:50")
     (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -136,7 +136,7 @@
       (tstamp 5F1065DD))
     (comp (ref C3)
       (value 47uF)
-      (footprint Capacitor_SMD:C_0603_1608Metric)
+      (footprint Capacitor_SMD:C_1206_3216Metric)
       (datasheet ~)
       (libsource (lib Device) (part C_Small) (description "Unpolarized capacitor, small symbol"))
       (sheetpath (names /) (tstamps /))
